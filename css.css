@@ -1,0 +1,66 @@
+/* styles.css - Custom theme for portfolio */
+
+/* Non-bg-light sections (default white): #f8ef97 */
+.section-padding:not(.bg-light),
+.hero {
+    background-color: #f8ef97 !important;
+}
+
+/* Updated styles.css - Added H2 header coloring */
+
+/* Non-bg-light sections (now #f8ef97): H2 headers to #c78171 */
+.section-padding:not(.bg-light) h2,
+.hero h2 {
+    color: #c78171 !important;
+}
+
+/* bg-light sections (now #c78171): H2 headers to #f8ef97 */
+.bg-light h2 {
+    color: #f8ef97 !important;
+}
+
+/* Cards in non-bg-light sections: #c78171 bg, headers/labels #f8ef97 */
+.section-padding:not(.bg-light) .card,
+.hero .card {
+    background-color: #c78171 !important;
+}
+
+.section-padding:not(.bg-light) .card h4,
+.section-padding:not(.bg-light) .card h5,
+.section-padding:not(.bg-light) .card label,
+.hero .card h4,
+.hero .card h5,
+.hero .card label {
+    color: #f8ef97 !important;
+}
+
+/* bg-light sections: #c78171 */
+.bg-light {
+    background-color: #c78171 !important;
+}
+
+/* Cards in bg-light sections: #f8ef97 bg, headers/labels #c78171 */
+.bg-light .card {
+    background-color: #f8ef97 !important;
+}
+
+.bg-light .card h4,
+.bg-light .card h5,
+.bg-light .card label {
+    color: #c78171 !important;
+}
+
+/* All input fields: #fdf7cb bg */
+.form-control {
+    background-color: #fdf7cb !important;
+}
+
+/* Ensure readability - optional adjustments */
+.section-padding:not(.bg-light) .card,
+.bg-light .card {
+    color: #000 !important; /* Black text for body content */
+}
+
+.card p {
+    color: inherit !important;
+}
